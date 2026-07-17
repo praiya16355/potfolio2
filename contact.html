@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Portfolio</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body{
+            background:#f5f7fa;
+            color:#333;
+        }
+
+        header{
+            background:#1e3a8a;
+            color:white;
+            padding:20px 0;
+            text-align:center;
+        }
+
+        nav{
+            margin-top:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffd166;
+        }
+
+        .container{
+            max-width:800px;
+            margin:50px auto;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align:center;
+            color:#1e3a8a;
+            margin-bottom:30px;
+        }
+
+        .contact-item{
+            margin:20px 0;
+            font-size:18px;
+        }
+
+        .contact-item span{
+            font-weight:bold;
+            color:#1e3a8a;
+        }
+
+        form{
+            margin-top:30px;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:16px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#1e3a8a;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#2563eb;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:40px;
+            padding:20px;
+            background:#1e3a8a;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-item">
+        <span>👤 ชื่อ :</span> นาย/นางสาว ..............
+    </div>
+
+    <div class="contact-item">
+        <span>📧 Email :</span> yourname@email.com
+    </div>
+
+    <div class="contact-item">
+        <span>📱 โทรศัพท์ :</span> 08X-XXX-XXXX
+    </div>
+
+    <div class="contact-item">
+        <span>📍 ที่อยู่ :</span> จังหวัด..............
+    </div>
+
+    <div class="contact-item">
+        <span>💙 Facebook :</span> facebook.com/yourname
+    </div>
+
+    <div class="contact-item">
+        <span>📷 Instagram :</span> @yourname
+    </div>
+
+    <form>
+        <input type="text" placeholder="ชื่อของคุณ" required>
+
+        <input type="email" placeholder="อีเมล" required>
+
+        <textarea rows="5" placeholder="ข้อความ"></textarea>
+
+        <button type="submit">ส่งข้อความ</button>
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 My Portfolio | By Your Name</p>
+</footer>
+
+</body>
+</html>
