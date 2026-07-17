@@ -1,185 +1,217 @@
 <!DOCTYPE html>
 <html lang="th">
-<head><link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | My Portfolio</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | My Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI',sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        body{
-            background:#f4f6f9;
-            color:#333;
-        }
+body{
+    background:#F5EFE6;
+    color:#5C4033;
+}
 
-        header{
-            background:#1e3a8a;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+/* Header */
+header{
+    background:#A67C52;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        nav{
-            margin-top:10px;
-        }
+header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
 
-        nav a:hover{
-            color:#ffd166;
-        }
+nav a:hover{
+    color:#FFF4E6;
+}
 
-        .container{
-            width:90%;
-            max-width:1100px;
-            margin:40px auto;
-        }
+/* Content */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
 
-        h2{
-            text-align:center;
-            color:#1e3a8a;
-            margin-bottom:30px;
-        }
+h2{
+    text-align:center;
+    color:#8B5E3C;
+    margin-bottom:30px;
+}
 
-        .portfolio-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-            gap:25px;
-        }
+/* Portfolio Cards */
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
 
-        .card{
-            background:white;
-            border-radius:15px;
-            overflow:hidden;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-            transition:.3s;
-        }
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
 
-        .card:hover{
-            transform:translateY(-8px);
-        }
+.card:hover{
+    transform:translateY(-8px);
+}
 
-        .card img{
-            width:100%;
-            height:200px;
-            object-fit:cover;
-        }
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
 
-        .card-content{
-            padding:20px;
-        }
+.card-content{
+    padding:20px;
+}
 
-        .card h3{
-            color:#1e3a8a;
-            margin-bottom:10px;
-        }
+.card-content h3{
+    color:#8B5E3C;
+    margin-bottom:10px;
+}
 
-        .card p{
-            line-height:1.6;
-        }
+.card-content p{
+    line-height:1.7;
+    color:#666;
+}
 
-        footer{
-            background:#1e3a8a;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:50px;
-        }
-    </style>
+/* Footer */
+footer{
+    background:#A67C52;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+</style>
+
 </head>
-
 <body>
 
 <header>
 
-    <h1>My Portfolio</h1>
+<h1>My Portfolio</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="education.html">Education</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</nav>
 
 </header>
 
 <div class="container">
 
-    <h2>ผลงาน (Portfolio)</h2>
+<h2>ผลงานของฉัน</h2>
 
-    <div class="portfolio-grid">
+<div class="portfolio">
 
-        <div class="card">
-            <img src="project1.jpg" alt="Project 1">
+<div class="card">
+<img src="images/project1.jpg" alt="Project 1">
 
-            <div class="card-content">
-                <h3>เว็บไซต์ Portfolio</h3>
-                <p>
-                    พัฒนาเว็บไซต์ Portfolio ด้วย HTML และ CSS
-                    เพื่อใช้สำหรับนำเสนอข้อมูลส่วนตัวและผลงาน
-                    ในการสมัครเข้าศึกษาต่อระดับมหาวิทยาลัย
-                </p>
-            </div>
-        </div>
+<div class="card-content">
+<h3>เว็บไซต์ Portfolio</h3>
+<p>
+สร้างเว็บไซต์ Portfolio ด้วย HTML และ CSS
+เพื่อใช้ในการแนะนำตัวและรวบรวมผลงานสำหรับศึกษาต่อ
+</p>
+</div>
+</div>
 
-        <div class="card">
-            <img src="project2.jpg" alt="Project 2">
+<div class="card">
+<img src="images/project2.jpg" alt="Project 2">
 
-            <div class="card-content">
-                <h3>โครงงานวิทยาศาสตร์</h3>
-                <p>
-                    จัดทำโครงงานวิทยาศาสตร์ร่วมกับเพื่อนในชั้นเรียน
-                    ฝึกการวางแผน ทดลอง วิเคราะห์ข้อมูล
-                    และนำเสนอผลงาน
-                </p>
-            </div>
-        </div>
+<div class="card-content">
+<h3>โครงงานวิทยาศาสตร์</h3>
+<p>
+ศึกษาค้นคว้า ทดลอง และนำเสนอผลงานในงานนิทรรศการวิทยาศาสตร์ของโรงเรียน
+</p>
+</div>
+</div>
 
-        <div class="card">
-            <img src="certificate1.jpg" alt="Certificate">
+<div class="card">
+<img src="images/certificate.jpg" alt="Certificate">
 
-            <div class="card-content">
-                <h3>เกียรติบัตร</h3>
-                <p>
-                    เข้าร่วมการแข่งขันและกิจกรรมทางวิชาการ
-                    ได้รับเกียรติบัตรด้านวิทยาศาสตร์ คอมพิวเตอร์
-                    และการพัฒนาทักษะต่าง ๆ
-                </p>
-            </div>
-        </div>
+<div class="card-content">
+<h3>เกียรติบัตร</h3>
+<p>
+เข้าร่วมการแข่งขัน กิจกรรม และอบรมต่าง ๆ พร้อมได้รับเกียรติบัตรรับรอง
+</p>
+</div>
+</div>
 
-        <div class="card">
-            <img src="activity.jpg" alt="Activity">
+<div class="card">
+<img src="images/activity.jpg" alt="Activity">
 
-            <div class="card-content">
-                <h3>กิจกรรมจิตอาสา</h3>
-                <p>
-                    เข้าร่วมกิจกรรมจิตอาสาและบำเพ็ญประโยชน์
-                    เพื่อพัฒนาทักษะการทำงานเป็นทีม
-                    และการเสียสละเพื่อสังคม
-                </p>
-            </div>
-        </div>
+<div class="card-content">
+<h3>กิจกรรม</h3>
+<p>
+เข้าร่วมกิจกรรมจิตอาสา กิจกรรมโรงเรียน และกิจกรรมส่งเสริมความเป็นผู้นำ
+</p>
+</div>
+</div>
 
-    </div>
+<div class="card">
+<img src="images/programming.jpg" alt="Programming">
+
+<div class="card-content">
+<h3>การเขียนโปรแกรม</h3>
+<p>
+ศึกษาการเขียนเว็บไซต์ด้วย HTML และ CSS พร้อมฝึกออกแบบหน้าเว็บด้วยตนเอง
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/teamwork.jpg" alt="Teamwork">
+
+<div class="card-content">
+<h3>การทำงานเป็นทีม</h3>
+<p>
+ทำงานร่วมกับเพื่อนในการจัดทำโครงงานและกิจกรรมต่าง ๆ ฝึกการสื่อสารและการวางแผน
+</p>
+</div>
+</div>
+
+</div>
 
 </div>
 
 <footer>
-    <p>© 2026 My Portfolio | By Your Name</p>
+<p>© 2026 My Portfolio | Your Name</p>
 </footer>
 
 </body>
 </html>
+
