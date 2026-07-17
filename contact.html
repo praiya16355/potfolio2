@@ -1,164 +1,203 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<head><link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | My Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        body{
-            background:#f5f7fa;
-            color:#333;
-        }
+body{
+    background:#F5EFE6;
+    color:#5C4033;
+}
 
-        header{
-            background:#1e3a8a;
-            color:white;
-            padding:20px 0;
-            text-align:center;
-        }
+/* Header */
+header{
+    background:#A67C52;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        nav{
-            margin-top:10px;
-        }
+header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
 
-        nav a:hover{
-            color:#ffd166;
-        }
+nav a:hover{
+    color:#FFF4E6;
+}
 
-        .container{
-            max-width:800px;
-            margin:50px auto;
-            background:white;
-            padding:40px;
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-        }
+/* Container */
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
 
-        h2{
-            text-align:center;
-            color:#1e3a8a;
-            margin-bottom:30px;
-        }
+h2{
+    text-align:center;
+    color:#8B5E3C;
+    margin-bottom:30px;
+}
 
-        .contact-item{
-            margin:20px 0;
-            font-size:18px;
-        }
+/* Contact */
+.contact-box{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
 
-        .contact-item span{
-            font-weight:bold;
-            color:#1e3a8a;
-        }
+.info{
+    flex:1;
+    min-width:280px;
+}
 
-        form{
-            margin-top:30px;
-        }
+.info p{
+    margin:15px 0;
+    font-size:18px;
+}
 
-        input, textarea{
-            width:100%;
-            padding:12px;
-            margin:10px 0;
-            border:1px solid #ccc;
-            border-radius:8px;
-            font-size:16px;
-        }
+/* Form */
+form{
+    flex:1;
+    min-width:280px;
+}
 
-        button{
-            width:100%;
-            padding:12px;
-            background:#1e3a8a;
-            color:white;
-            border:none;
-            border-radius:8px;
-            font-size:18px;
-            cursor:pointer;
-        }
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #C8B6A6;
+    border-radius:10px;
+    font-size:16px;
+}
 
-        button:hover{
-            background:#2563eb;
-        }
+textarea{
+    resize:none;
+}
 
-        footer{
-            text-align:center;
-            margin-top:40px;
-            padding:20px;
-            background:#1e3a8a;
-            color:white;
-        }
-    </style>
+button{
+    width:100%;
+    padding:12px;
+    background:#A67C52;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#8B5E3C;
+}
+
+/* Footer */
+footer{
+    margin-top:40px;
+    background:#A67C52;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.contact-box{
+    flex-direction:column;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>My Portfolio</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="education.html">Education</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
+</nav>
+
 </header>
 
 <div class="container">
 
-    <h2>Contact Me</h2>
+<h2>Contact Me</h2>
 
-    <div class="contact-item">
-        <span>👤 ชื่อ :</span> นางสาว ไปรยา รื่นรมย์ 
-    </div>
+<div class="contact-box">
 
-    <div class="contact-item">
-        <span>📧 Email :</span> praiyaruenrom@gmail.com
-    </div>
+<div class="info">
 
-    <div class="contact-item">
-        <span>📱 โทรศัพท์ :</span> 091-765-6280
-    </div>
+<h3>ข้อมูลการติดต่อ</h3>
 
-    <div class="contact-item">
-        <span>📍 ที่อยู่ :</span> จังหวัด =ชลบุรี
-    </div>
+<p>👤 <strong>ชื่อ :</strong> นางสาว ไปรยา รื่นรมย์  </p>
 
-    <div class="contact-item">
-        <span>💙 Facebook :</span> facebook.com/yourname
-    </div>
+<p>📞 <strong>โทร :</strong> 091-765-6280</p>
 
-    <div class="contact-item">
-        <span>📷 Instagram :</span> @yourname
-    </div>
+<p>📧 <strong>Email :</strong> @gmail.com</p>
 
-    <form>
-        <input type="text" placeholder="ชื่อของคุณ" required>
+<p>📍 <strong>ที่อยู่ :</strong> จังหวัด ชลบุรี</p>
 
-        <input type="email" placeholder="อีเมล" required>
+<p>🌐 <strong>Facebook :</strong> facebook.com/yourname</p>
 
-        <textarea rows="5" placeholder="ข้อความ"></textarea>
+<p>📷 <strong>Instagram :</strong> @yourname</p>
 
-        <button type="submit">ส่งข้อความ</button>
-    </form>
+</div>
+
+<form>
+
+<input type="text" placeholder="ชื่อของคุณ" required>
+
+<input type="email" placeholder="อีเมล" required>
+
+<textarea rows="6" placeholder="ข้อความ"></textarea>
+
+<button type="submit">ส่งข้อความ</button>
+
+</form>
+
+</div>
 
 </div>
 
 <footer>
-    <p>© 2026 My Portfolio | By Your Name</p>
+
+<p>© 2026 My Portfolio | Your Name</p>
+
 </footer>
 
 </body>
