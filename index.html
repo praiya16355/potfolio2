@@ -1,39 +1,156 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background:#F5EFE6;
+            color:#4E342E;
+        }
+
+        /* Header */
+        header{
+            background:#A67C52;
+            color:white;
+            text-align:center;
+            padding:20px;
+            box-shadow:0 3px 10px rgba(0,0,0,.15);
+        }
+
+        header h1{
+            font-size:36px;
+        }
+
+        /* Menu */
+        nav{
+            margin-top:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#FFF4E6;
+        }
+
+        /* Main */
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,.08);
+        }
+
+        h2{
+            color:#8B5E3C;
+            margin-bottom:20px;
+            text-align:center;
+        }
+
+        p{
+            font-size:18px;
+            line-height:1.8;
+            text-align:center;
+        }
+
+        /* Button */
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:12px 30px;
+            background:#A67C52;
+            color:white;
+            text-decoration:none;
+            border-radius:30px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#8B5E3C;
+        }
+
+        /* Footer */
+        footer{
+            margin-top:40px;
+            background:#A67C52;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+
+            header h1{
+                font-size:28px;
+            }
+
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+
+            .container{
+                padding:25px;
+            }
+        }
+    </style>
+
+</head>
 <body>
 
 <header>
-    <nav>
-        <h2>Portfolio</h2>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="portfolio.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <h1>My Portfolio</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
     </nav>
+
 </header>
 
-<section class="hero">
-    <img src="images/profile.jpg" alt="Profile">
-    <h1>สวัสดีค่ะ</h1>
-    <h2>นางสาวไปรยา รื่นรมย์</h2>
-    <p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+<div class="container">
 
-   <p>โรงเรียนพานทอง</p>
-  
-    <a href="about.html" class="btn">รู้จักฉันเพิ่มเติม</a>
-</section>
+    <h2>ยินดีต้อนรับ</h2>
 
-<script src="js/script.js"></script>
+    <p>
+        ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน<br>
+        เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว ประวัติการศึกษา
+        ผลงาน ทักษะ และกิจกรรมต่าง ๆ เพื่อใช้ประกอบการศึกษาต่อในระดับมหาวิทยาลัย
+    </p>
+
+    <center>
+        <a href="about.html" class="btn">เริ่มต้น</a>
+    </center>
+
+</div>
+
+<footer>
+    <p>© 2026 My Portfolio | Your Name</p>
+</footer>
+
 </body>
 </html>
