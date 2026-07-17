@@ -1,318 +1,238 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | My Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background:#f5f7fb;
-            color:#333;
-        }
+body{
+    background:#F5EFE6;
+    color:#5C4033;
+}
 
-        header{
-            background:#0f172a;
-            padding:18px 0;
-        }
+/* Header */
+header{
+    background:#A67C52;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        nav{
-            width:90%;
-            margin:auto;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
+header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
 
-        nav h2{
-            color:white;
-            margin:0;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
 
-        nav ul{
-            display:flex;
-            list-style:none;
-            gap:20px;
-            margin:0;
-            padding:0;
-        }
+nav a:hover{
+    color:#FFF4E6;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            transition:.3s;
-        }
+/* กล่องข้อมูล */
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
 
-        nav a:hover{
-            color:#38bdf8;
-        }
+.about{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
 
-        .container{
-            max-width:1100px;
-            margin:50px auto;
-            display:grid;
-            grid-template-columns:300px 1fr;
-            gap:40px;
-            align-items:center;
-            padding:20px;
-        }
+.profile img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #A67C52;
+}
 
-        .profile img{
-            width:100%;
-            border-radius:20px;
-            box-shadow:0 10px 20px rgba(0,0,0,.15);
-        }
+.info{
+    flex:1;
+}
 
-        .about h1{
-            color:#2563eb;
-            margin-bottom:15px;
-        }
+.info h2{
+    color:#8B5E3C;
+    margin-bottom:20px;
+}
 
-        .about p{
-            line-height:1.8;
-            font-size:17px;
-        }
+.info p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:12px;
+}
 
-        .info{
-            margin-top:25px;
-        }
+.info strong{
+    color:#8B5E3C;
+}
 
-        .info table{
-            width:100%;
-        }
+/* ตารางข้อมูล */
+.table{
+    margin-top:30px;
+}
 
-        .info td{
-            padding:10px;
-            border-bottom:1px solid #ddd;
-        }
+table{
+    width:100%;
+    border-collapse:collapse;
+}
 
-        .skills{
-            margin-top:50px;
-        }
+table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
 
-        .skills h2{
-            color:#2563eb;
-        }
+table td:first-child{
+    font-weight:bold;
+    width:180px;
+    color:#8B5E3C;
+}
 
-        .skill{
-            margin:20px 0;
-        }
+footer{
+    background:#A67C52;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
 
-        .bar{
-            width:100%;
-            height:12px;
-            background:#ddd;
-            border-radius:20px;
-            overflow:hidden;
-        }
+@media(max-width:768px){
 
-        .fill{
-            height:100%;
-            background:#2563eb;
-        }
+.about{
+    flex-direction:column;
+    text-align:center;
+}
 
-        footer{
-            margin-top:60px;
-            background:#0f172a;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+nav a{
+    display:block;
+    margin:10px 0;
+}
 
-        @media(max-width:768px){
+.profile img{
+    width:200px;
+    height:200px;
+}
 
-            .container{
-                grid-template-columns:1fr;
-                text-align:center;
-            }
-
-            .profile img{
-                width:220px;
-            }
-
-            .profile{
-                display:flex;
-                justify-content:center;
-            }
-
-        }
-
-    </style>
+}
+</style>
 
 </head>
-
 <body>
 
 <header>
-    <header>
 
-    <h1>My Portfolio</h1>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-</header>
+<h1>My Portfolio</h1>
 
 <nav>
-
-<h2>My Portfolio</h2>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="skills.html">Skills</a></li>
-
-<li><a href="portfolio.html">Portfolio</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="education.html">Education</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="skills.html">Skills</a>
+<a href="contact.html">Contact</a>
 </nav>
 
 </header>
 
-<section class="container">
-
-<div class="profile">
-
-<img src="images/profile.jpg" alt="Profile">
-
-</div>
+<div class="container">
 
 <div class="about">
 
-<h1>About Me</h1>
-
-<p>
-สวัสดีค่ะ ฉันเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
-มีความสนใจด้านเทคโนโลยี การเขียนโปรแกรม และการออกแบบเว็บไซต์
-ปัจจุบันกำลังพัฒนาเว็บไซต์ Portfolio เพื่อรวบรวมผลงานและประสบการณ์ของตนเอง
-รวมถึงฝึกฝนการใช้ HTML, CSS และ JavaScript สำหรับการพัฒนาเว็บไซต์
-</p>
+<div class="profile">
+<img src="images/profile.jpg" alt="Profile">
+</div>
 
 <div class="info">
+
+<h2>About Me</h2>
+
+<p><strong>สวัสดีค่ะ/ครับ</strong></p>
+
+<p>
+ฉันเป็นนักเรียนระดับชั้นมัธยมศึกษาปีที่ 6 มีความสนใจในการเรียนรู้สิ่งใหม่ ๆ
+โดยเฉพาะด้านเทคโนโลยี การออกแบบเว็บไซต์ และการพัฒนาทักษะด้านคอมพิวเตอร์
+พร้อมทั้งมุ่งมั่นพัฒนาตนเองเพื่อศึกษาต่อในระดับมหาวิทยาลัย
+</p>
+
+</div>
+
+</div>
+
+<div class="table">
 
 <table>
 
 <tr>
-<td><strong>ชื่อ-นามสกุล</strong></td>
-<td>ไปรยา รื่นรมย์</td>
+<td>ชื่อ - สกุล</td>
+<td>นางสาว ไปรยา รื่นรมย์ </td>
 </tr>
 
 <tr>
-<td><strong>ชื่อเล่น</strong></td>
-<td>เอย</td>
+<td>ชื่อเล่น</td>
+<td> เอย </td>
 </tr>
 
 <tr>
-<td><strong>วันเกิด</strong></td>
-<td>4กันยายน2551</td>
+<td>วันเกิด</td>
+<td>4 กันยายน 2551</td>
 </tr>
 
 <tr>
-<td><strong>อายุ</strong></td>
+<td>อายุ</td>
 <td>18 ปี</td>
 </tr>
 
 <tr>
-<td><strong>โรงเรียน</strong></td>
+<td>โรงเรียน</td>
 <td>พานทอง</td>
 </tr>
 
 <tr>
-<td><strong>แผนการเรียน</strong></td>
-<td>วิทยาศาสตร์-คณิตศาสตร์</td>
+<td>แผนการเรียน</td>
+<td>วิทยาศาสตร์-คณิตศาสตร์ </td>
 </tr>
 
 <tr>
-<td><strong>อีเมล</strong></td>
-<td>praiyaruenrom@gmail.com</td>
+<td>งานอดิเรก</td>
+<td>อ่านหนังสือ ฟังเพลง ออกกำลังกาย และเรียนรู้การเขียนเว็บไซต์</td>
+</tr>
+
+<tr>
+<td>ความใฝ่ฝัน</td>
+<td>ศึกษาต่อในระดับมหาวิทยาลัย และพัฒนาทักษะด้านเทคโนโลยี</td>
 </tr>
 
 </table>
 
 </div>
 
-<div class="skills">
-
-<h2>My Skills</h2>
-
-<div class="skill">
-
-<p>HTML</p>
-
-<div class="bar">
-
-<div class="fill" style="width:90%;"></div>
-
 </div>
-
-</div>
-
-<div class="skill">
-
-<p>CSS</p>
-
-<div class="bar">
-
-<div class="fill" style="width:85%;"></div>
-
-</div>
-
-</div>
-
-<div class="skill">
-
-<p>JavaScript</p>
-
-<div class="bar">
-
-<div class="fill" style="width:70%;"></div>
-
-</div>
-
-</div>
-
-<div class="skill">
-
-<p>Python</p>
-
-<div class="bar">
-
-<div class="fill" style="width:75%;"></div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <footer>
-    <footer>
-    <p>© 2026 My Portfolio | Your Name</p>
-</footer>
-
-<p>© 2026 My Portfolio | Created by Your Name</p>
-
+<p>© 2026 My Portfolio | Your Name</p>
 </footer>
 
 </body>
 </html>
+
+    
